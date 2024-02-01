@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(fd.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background-color 0.5s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: orangered;
+        }
+
+        .jj {
+            background-color: peachpuff;
+            border: 2px solid peachpuff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .fg {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .f {
+            background-color: peachpuff;
+            border: 2px solid peachpuff;
+            border-radius: 10px;
+            text-align: left;
+            padding: 20px;
+            justify-content: flex-start; 
+        }
+
+        img {
+            width: 350px;
+            height: 300;
+        }
+
+        .fgg {
+            background-color: peachpuff;
+            border: 2px solid peachpuff;
+            border-radius: 10px;
+            text-align: left;
+            padding: 20px;
+            justify-content: flex-start; 
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="jj" href="Abus.html">About Us</a></li>
+            <li><a class="jj" href="Newup.html">New Update</a></li>
+            <li><a class="jj" href="sait2.html">OG Skin</a></li>
+            <li><a class="jj" href="Man.html">Main menu</a></li>
+        </ul>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+
+    <script>
+        function toggleTheme() {
+            var body = document.body;
+            var nav = document.querySelector('nav');
+
+            if (body.style.backgroundColor === 'rgba(255, 255, 255, 0.8)') {
+                body.style.backgroundColor = '#f5f5f5';
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+            } else {
+                body.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+                nav.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            }
+        }
+    </script>
+
+    <div class="f">
+        <img src="Fo.jpg"><br>
+        <p class="fg">Fortnite| Скін ворон--легендарний</p>
+    </div>
+    <div class="jj">
+        <img src="midas.jpg"><br>
+        <p class="fg">Fortnite| Скін Мідаса--легендарний</p>
+    </div>
+    <div class="jj">
+        <img src="skull.jpg"><br>
+        <p class="fg">Fortnite| Скін Skull--Епічний</p>
+    </div>
+    <div class="jj">
+        <img src="bana.jpg"><br>
+        <p class="fg">Fortnite| Скін Банан--Епічний</p>
+    </div>
+    <br>
+   
+    <div class="jj">
+        <img src="ex.jpg"><br>
+        <p class="fgg">Fortnite| Скін Ikonic--епічний</p>
+    </div>
+</body>
+</html>

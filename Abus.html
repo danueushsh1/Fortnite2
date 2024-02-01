@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: flex-end; /* Змінено на flex-end для вирівнювання знизу */
+            justify-content: flex-end; /* Змінено на flex-end для вирівнювання справа */
+            height: 100vh;
+            background-image: url(fd.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background-color 0.5s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: orangered;
+        }
+
+        .jj {
+            background-color: peachpuff;
+            border: 2px solid peachpuff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .fg {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .f {
+            background-color: peachpuff;
+            border: 2px solid peachpuff;
+            border-radius: 10px;
+            text-align: left;
+            padding: 20px;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="jj" href="Abus.html">About Us</a></li>
+            <li><a class="jj" href="Newup.html">New Update</a></li>
+            <li><a class="jj" href="sait2.html">OG Skin</a></li>
+            <li><a class="jj" href="index.html">Main menu</a></li>
+        </ul>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+
+    <script>
+        function toggleTheme() {
+            var body = document.body;
+            var nav = document.querySelector('nav');
+
+            if (body.style.backgroundColor === 'rgba(255, 255, 255, 0.8)') {
+                body.style.backgroundColor = '#f5f5f5';
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+            } else {
+                body.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+                nav.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            }
+        }
+    </script>
+
+    <div class="f">Tik-Tok: <a href="https://www.tiktok.com/@fortnite">https://www.tiktok.com/@fortnite</a><br>Youtube:<a href="https://www.youtube.com/@fortnite">https://www.youtube.com/@fortnite</a><br>Instagram:<a href="https://www.instagram.com/fortnite/">https://www.instagram.com/fortnite/</a></div>
+    <div class="f">how u can chat with us<br>
+        gmail: fortnitefun912@gmail.com
+
+    </div>
+</body>
+</html>
